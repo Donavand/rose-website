@@ -1,4 +1,4 @@
-<svg width="600" height="700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700">
+<svg width="250" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200">
   <defs>
     <!-- Gold/Bronze gradient -->
     <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -14,12 +14,10 @@
     </radialGradient>
   </defs>
   
-  <!-- Background is transparent/white -->
-  
   <!-- Intertwined HR Monogram -->
   <g id="monogram">
     <!-- H Letter -->
-    <path d="M 150 50 L 150 200 M 150 125 L 250 125 M 250 50 L 250 200" 
+    <path d="M 50 0 L 50 150 M 50 75 L 150 75 M 150 0 L 150 150" 
           stroke="url(#goldGradient)" 
           fill="none" 
           stroke-width="12" 
@@ -27,7 +25,7 @@
           stroke-linejoin="round"/>
     
     <!-- R Letter - intertwined with H -->
-    <path d="M 250 50 L 250 125 M 250 50 Q 310 50 340 80 Q 370 110 350 140 Q 330 160 250 125 M 320 125 L 400 200" 
+    <path d="M 150 0 L 150 75 M 150 0 Q 210 0 240 30 Q 270 60 250 90 Q 230 110 150 75 M 220 75 L 300 150" 
           stroke="url(#goldGradient)" 
           fill="none" 
           stroke-width="12" 
@@ -35,13 +33,13 @@
           stroke-linejoin="round"/>
     
     <!-- Decorative embellishments on letters -->
-    <circle cx="150" cy="50" r="8" fill="url(#goldGradient)"/>
-    <circle cx="250" cy="50" r="8" fill="url(#goldGradient)"/>
-    <circle cx="340" cy="80" r="6" fill="url(#goldGradient)"/>
+    <circle cx="50" cy="0" r="8" fill="url(#goldGradient)"/>
+    <circle cx="150" cy="0" r="8" fill="url(#goldGradient)"/>
+    <circle cx="240" cy="30" r="6" fill="url(#goldGradient)"/>
   </g>
   
-  <!-- Rose with stem and leaves -->
-  <g id="rose" transform="translate(380, 160)">
+  <!-- Rose with stem and leaves - scaled down to fit with HR monogram -->
+  <g id="rose" transform="translate(280, 80) scale(0.4)">
     <!-- Rose bloom -->
     <ellipse cx="0" cy="0" rx="25" ry="28" fill="url(#roseGradient)" stroke="url(#goldGradient)" stroke-width="2"/>
     <!-- Inner petals -->
@@ -62,30 +60,4 @@
     <ellipse cx="-8" cy="50" rx="8" ry="15" fill="url(#goldGradient)" transform="rotate(-30 -8 50)"/>
     <ellipse cx="10" cy="60" rx="8" ry="15" fill="url(#goldGradient)" transform="rotate(25 10 60)"/>
   </g>
-  
-  <!-- "HOUSE OF ROSE" text -->
-  <text x="300" y="280" 
-        font-family="Georgia, serif" 
-        font-size="42" 
-        font-weight="bold" 
-        fill="url(#goldGradient)" 
-        text-anchor="middle" 
-        letter-spacing="3">
-    <tspan x="300" dy="0">H</tspan>
-    <tspan font-size="36">OUSE </tspan>
-    <tspan font-size="28" font-style="italic">of </tspan>
-    <tspan font-size="42" dx="-6">R</tspan>
-    <tspan font-size="36">OSE</tspan>
-  </text>
-  
-  <!-- Tagline: "INDULGE IN LUXURY, ELEVATE YOUR LIFESTYLE" -->
-  <text x="300" y="340" 
-        font-family="Arial, sans-serif" 
-        font-size="18" 
-        font-weight="300" 
-        fill="url(#goldGradient)" 
-        text-anchor="middle" 
-        letter-spacing="4">
-    INDULGE IN LUXURY, ELEVATE YOUR LIFESTYLE
-  </text>
 </svg>
