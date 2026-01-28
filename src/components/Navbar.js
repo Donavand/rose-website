@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import hrEmblem from '../hr-emblem.svg';
+import horElegantEmblem from '../hor-elegant-emblem.png';
 import '../App.css';
 
 function Navbar() {
@@ -23,7 +23,7 @@ function Navbar() {
         </li>
       </ul>
       <div className="navbar-logo">
-        <img src={hrEmblem} alt="HR Emblem" />
+        <img src={horElegantEmblem} alt="HOR Elegant Emblem" />
       </div>
     </nav>
   );

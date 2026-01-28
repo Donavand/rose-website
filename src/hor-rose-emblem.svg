@@ -1,0 +1,80 @@
+<svg width="180" height="90" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 90">
+  <defs>
+    <!-- Gold/Bronze gradient - matching home page logo -->
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4AF37;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#C9A961;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B8860B;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Rose gradient -->
+    <radialGradient id="roseGradient" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#DC143C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B0000;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- H Letter - elegant, refined serif style -->
+  <path d="M 15 20 L 15 70 M 15 45 L 42 45 M 42 20 L 42 70" 
+        stroke="url(#goldGradient)" 
+        fill="none" 
+        stroke-width="4" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+  <!-- H elegant serif caps -->
+  <path d="M 12 20 Q 15 18 18 20 M 39 20 Q 42 18 45 20" 
+        stroke="url(#goldGradient)" 
+        fill="none" 
+        stroke-width="3" 
+        stroke-linecap="round"/>
+  
+  <!-- O Letter - elegant, refined oval -->
+  <ellipse cx="70" cy="45" rx="15" ry="22" 
+           stroke="url(#goldGradient)" 
+           fill="none" 
+           stroke-width="4" 
+           stroke-linecap="round"/>
+  <!-- O elegant decorative accent -->
+  <path d="M 70 20 Q 72 18 74 20" 
+        stroke="url(#goldGradient)" 
+        fill="none" 
+        stroke-width="2.5" 
+        stroke-linecap="round"/>
+  
+  <!-- R Letter - elegant with sophisticated curve -->
+  <path d="M 100 20 L 100 70 M 100 20 Q 120 20 128 32 Q 132 40 130 48 Q 127 55 115 55 M 115 55 L 130 70" 
+        stroke="url(#goldGradient)" 
+        fill="none" 
+        stroke-width="4" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+  <!-- R elegant serif cap -->
+  <path d="M 97 20 Q 100 18 103 20" 
+        stroke="url(#goldGradient)" 
+        fill="none" 
+        stroke-width="3" 
+        stroke-linecap="round"/>
+  
+  <!-- Rose with stem and leaves - elegant, refined, positioned next to R -->
+  <g id="rose" transform="translate(145, 30) scale(0.35)">
+    <!-- Rose bloom - elegant layered petals -->
+    <ellipse cx="0" cy="0" rx="22" ry="25" fill="url(#roseGradient)" stroke="url(#goldGradient)" stroke-width="2"/>
+    <!-- Inner petals - sophisticated layering -->
+    <ellipse cx="-7" cy="-4" rx="10" ry="13" fill="#B22222" stroke="url(#goldGradient)" stroke-width="1.2"/>
+    <ellipse cx="7" cy="-4" rx="10" ry="13" fill="#B22222" stroke="url(#goldGradient)" stroke-width="1.2"/>
+    <ellipse cx="0" cy="7" rx="9" ry="11" fill="#B22222" stroke="url(#goldGradient)" stroke-width="1.2"/>
+    <!-- Rose center - elegant detail -->
+    <circle cx="0" cy="0" r="5" fill="#8B0000" stroke="url(#goldGradient)" stroke-width="1"/>
+    
+    <!-- Rose stem - elegant curved flow -->
+    <path d="M 0 25 Q 3 35 0 65" 
+          stroke="url(#goldGradient)" 
+          fill="none" 
+          stroke-width="3.5" 
+          stroke-linecap="round"/>
+    
+    <!-- Leaves - elegant, refined positioning -->
+    <ellipse cx="-6" cy="50" rx="7" ry="13" fill="url(#goldGradient)" transform="rotate(-28 -6 50)"/>
+    <ellipse cx="8" cy="55" rx="7" ry="13" fill="url(#goldGradient)" transform="rotate(22 8 55)"/>
+  </g>
+</svg>
