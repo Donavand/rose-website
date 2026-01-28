@@ -1,28 +1,24 @@
-import hrEmblem from './hr-emblem.svg';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import About from './pages/About';
+import Contact from './pages/Contact';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <nav className="navbar">
-        <ul className="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div className="navbar-logo">
-          <img src={hrEmblem} alt="HR Emblem" />
-        </div>
-      </nav>
-      
-      <main className="main-content">
-        <section className="hero-section">
-          <h1>Welcome to House of Rose</h1>
-          <p>Indulge in luxury, elevate your lifestyle</p>
-        </section>
-      </main>
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <main className="main-content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
+      </div>
+    </Router>
   );
 }
 
