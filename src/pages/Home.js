@@ -1,10 +1,9 @@
+import houseOfRoseLogo from '../house-of-rose-logo.png';
 import '../App.css';
 
 function Home() {
   return (
-    <section className="hero-section">
-      <h1>Welcome to House of Rose</h1>
-      <p>Indulge in luxury, elevate your lifestyle</p>
+    <section className="hero-section" style={{ backgroundImage: `url(${houseOfRoseLogo})` }}>
     </section>
   );
 }
